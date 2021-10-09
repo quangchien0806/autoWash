@@ -488,9 +488,6 @@ body {
   .location_all {
     flex-direction: column;
   }
-  .address {
-    flex-direction: column;
-  }
 }
 @media only screen and (max-width: 650px) {
   .container {
@@ -525,6 +522,9 @@ body {
     flex-basis: 100%;
   }
   .price_item {
+    flex-direction: column;
+  }
+  .address {
     flex-direction: column;
   }
 }
