@@ -34,6 +34,16 @@ body {
   padding: 0 6%;
   box-sizing: border-box;
 }
+.navbar-menu-icon {
+  display: none;
+}
+.navbar .navbar-brand {
+  font-weight: 700;
+  box-sizing: border-box;
+  display: none;
+  color: #ffffff;
+  text-decoration: none;
+}
 .navbar .navbar_menu {
   width: 100%;
   display: flex;
@@ -441,7 +451,30 @@ body {
 }
 /* responsive */
 @media only screen and (max-width: 990px) {
+  .navbar_icon {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-menu-icon {
+    margin-top: 5px;
+    display: block;
+  }
+  .navbar .navbar-brand {
+    padding: 5px 0 5px;
+    font-size: 20px;
+    display: block;
+  }
   .nav_bar .navbar .navbar_menu {
+    display: none;
+  }
+  .ml_auto {
+    display: flex;
+    flex-direction: column;
+  }
+  .ml_auto a {
+    margin-bottom: 10px;
+  }
+  .mr_auto .btn.btn-custom {
     display: none;
   }
   .carousel .carousel_item-text h3 {
