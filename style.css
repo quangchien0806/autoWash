@@ -464,13 +464,19 @@ body {
     font-size: 20px;
     display: block;
   }
-  .nav_bar .navbar .navbar_menu {
+  .navbar_menu {
     display: none;
   }
   .ml_auto {
     display: flex;
     flex-direction: column;
+    height: 0;
+    overflow: hidden;
   }
+  .ml_auto.dropdown {
+    height: 165px;
+  }
+
   .ml_auto a {
     margin-bottom: 10px;
   }
