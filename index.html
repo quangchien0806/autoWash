@@ -13,7 +13,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,7 +20,16 @@
     <div class="nav_bar">
       <div class="container">
         <div class="navbar">
-          <div class="navbar_menu">
+          <div class="navbar_icon">
+            <a href="#" class="navbar-brand">MENU</a>
+            <img
+              id="icon_menu"
+              class="navbar-menu-icon"
+              src="img/icons8-menu.svg"
+              alt="Icon_menu"
+            />
+          </div>
+          <div class="navbar_menu" id="menuList">
             <div class="navbar_menu-nav ml_auto">
               <a href="" class="nav_item active">Home</a>
               <a href="" class="nav_item">About</a>
@@ -367,5 +375,6 @@
       </div>
     </div>
     <!-- Location End -->
+    <script src="main.js"></script>
   </body>
 </html>
