@@ -530,6 +530,121 @@ body {
 .team_Our .team-social a:hover {
   color: #202c45;
 }
+/* <!-- Blog Start --> */
+.blog {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 90px;
+}
+.blog_Our {
+  width: 100%;
+  display: flex;
+}
+.blog_Our .blog-item {
+  position: relative;
+  flex-basis: 33%;
+  padding: 0 15px;
+}
+.blog_Our .blog-img {
+  position: relative;
+  width: 100%;
+}
+.blog_Our .blog-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+.blog_Our .meta-date {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  bottom: 10%;
+  left: calc(50% - 35px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 70px;
+  background: #202c45;
+  color: #ffffff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.blog_Our .meta-date span {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.blog_Our .meta-date strong {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.blog_Our .blog-item:hover .meta-date {
+  bottom: calc(50% - 35px);
+  opacity: 1;
+}
+
+.blog_Our .blog-text {
+  padding: 25px 0 20px 0;
+}
+
+.blog_Our .blog-text h3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.blog_Our .blog-text h3 a {
+  text-decoration: none;
+  color: #202c45;
+}
+
+.blog_Our .blog-text h3 a:hover {
+  color: #e81c2e;
+}
+
+.blog_Our .blog-text p {
+  margin: 0;
+}
+.blog_Our .blog-meta {
+  display: flex;
+}
+
+.blog_Our .blog-meta p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.blog_Our .blog-meta p:first-child {
+  padding-left: 0;
+}
+
+.blog_Our .blog-meta p:last-child {
+  padding-right: 0;
+  border: none;
+}
+
+.blog_Our .blog-meta i {
+  color: #999999;
+  margin-right: 5px;
+}
+
+.blog_Our .blog-meta a {
+  text-decoration: none;
+  color: #999999;
+}
+
+.blog_Our .blog-meta a:hover {
+  color: #e81c2e;
+}
+/* <!-- Blog End --> */
 /* responsive */
 @media only screen and (max-width: 990px) {
   .navbar_icon {
@@ -615,6 +730,16 @@ body {
   .team_Our .team-item {
     flex-basis: 46%;
     margin-bottom: 40px;
+  }
+  .blog_Our {
+    flex-direction: column;
+  }
+  .blog_Our .blog-item {
+    margin-bottom: 40px;
+  }
+  .blog_Our .blog-meta {
+    display: flex;
+    justify-content: center;
   }
 }
 @media only screen and (max-width: 650px) {
