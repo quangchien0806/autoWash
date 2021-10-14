@@ -237,6 +237,10 @@ body {
 .list_care .service-item {
   flex-basis: 22%;
 }
+.list_care .service-item img {
+  width: 80px;
+  color: #cccccc;
+}
 .list_care .service-item h3 {
   margin-bottom: 15px;
 }
@@ -449,6 +453,83 @@ body {
 .location-form .btn.btn-custom:hover {
   color: #ffffff;
 }
+/* <!-- Team Start --> */
+.team {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 90px;
+}
+.team_Our {
+  width: 100%;
+  display: flex;
+}
+.team_Our .team-item {
+  position: relative;
+  flex-basis: 24%;
+  padding: 0 15px;
+}
+.team_Our .team-img {
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+}
+.team_Our .team-img img {
+  width: 100%;
+  transition: 0.4s;
+}
+.team_Our .team-text {
+  margin-top: -4px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background: #202c45;
+  border-radius: 0 0 5px 5px;
+  transition: 0.5s;
+  padding: 35px 0 30px;
+  color: #ffffff;
+}
+.team_Our .team-text h2 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.team_Our .team-social {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  top: -20px;
+  left: 0;
+  text-align: center;
+  font-size: 0;
+}
+.team_Our .team-social a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 3px;
+  padding: 7px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #ffffff;
+  background: #202c45;
+  border-radius: 40px;
+  transition: 0.5s;
+}
+.team_Our .team-item:hover .team-text {
+  background: #e81c2e;
+}
+.team_Our .team-item:hover img {
+  transform: scale(1.1);
+}
+.team_Our .team-item:hover .team-social a {
+  background: #e81c2e;
+}
+
+.team_Our .team-social a:hover {
+  color: #202c45;
+}
 /* responsive */
 @media only screen and (max-width: 990px) {
   .navbar_icon {
@@ -527,6 +608,14 @@ body {
   .location_all {
     flex-direction: column;
   }
+  .team_Our {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team_Our .team-item {
+    flex-basis: 46%;
+    margin-bottom: 40px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .container {
@@ -565,5 +654,12 @@ body {
   }
   .address {
     flex-direction: column;
+  }
+  .team_Our {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .team_Our .team-item {
+    margin-bottom: 40px;
   }
 }
