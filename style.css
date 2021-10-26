@@ -645,6 +645,116 @@ body {
   color: #e81c2e;
 }
 /* <!-- Blog End --> */
+/* <!-- Footer Start --> */
+.footer {
+  width: 100%;
+  box-sizing: border-box;
+  background: #202c45;
+}
+.footer_End {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.footer_item {
+  flex-basis: 25%;
+  padding: 0 15px;
+  margin-top: 90px;
+}
+.footer_item h2 {
+  color: #e81c2e;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.footer-contact p {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-contact p i {
+  margin-right: 10px;
+}
+.footer-social {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+}
+.footer-social a {
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 5px;
+  color: #202c45;
+  transition: 0.5s;
+}
+.footer-social a:hover {
+  color: #ffffff;
+  background-color: #e81c2e;
+}
+.footer-link {
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-link a {
+  margin-bottom: 10px;
+  color: #ffffff;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.footer .footer-link a::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .footer-link a:hover {
+  color: #e81c2e;
+  letter-spacing: 1px;
+}
+.form-control {
+  margin-bottom: 15px;
+}
+.footer_item .btn.btn-custom {
+  width: 100%;
+}
+.footer_item .btn.btn-custom:hover {
+  color: #ffffff;
+  background: #e81c2e;
+  box-shadow: inset 200px 0 0 0 #e81c2e;
+}
+.footer .copyright {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 45px;
+}
+
+.footer .copyright p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.footer .copyright p a {
+  color: #e81c2e;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.footer .copyright p a:hover {
+  color: #ffffff;
+}
+
+/* <!-- Footer End --> */
 /* responsive */
 @media only screen and (max-width: 990px) {
   .navbar_icon {
@@ -741,6 +851,12 @@ body {
     display: flex;
     justify-content: center;
   }
+  .footer_End {
+    flex-wrap: wrap;
+  }
+  .footer_End .footer_item {
+    flex-basis: 45%;
+  }
 }
 @media only screen and (max-width: 650px) {
   .container {
@@ -786,5 +902,8 @@ body {
   }
   .team_Our .team-item {
     margin-bottom: 40px;
+  }
+  .footer_End {
+    flex-direction: column;
   }
 }
